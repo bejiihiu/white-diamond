@@ -4,7 +4,7 @@
 
 Keyboard navigation is not a feature for power users. It is not a fallback for mouse users. Keyboard navigation is the primary mechanism for moving through architectural space without direct pointing. Every keypress is a movement instruction—a command that shifts the user's position within the infinite spatial field defined by the [screen as window](../space-physics/screen-as-window.md).
 
-When a user presses Tab, they advance to the next architectural object in the [spatial hierarchy](../spatial-hierarchy/layer-system.md). When they press an arrow key, they navigate within a composite widget—a cluster of objects arranged in a specific spatial pattern. When they press Escape, they exit a constrained spatial region and return to the broader architectural context.
+When a user presses Tab, they advance to the next architectural object in the [spatial hierarchy](../spatial-hierarchy/layer-system.md). When they press an arrow key, they navigate within a composite object—a cluster of objects arranged in a specific spatial pattern. When they press Escape, they exit a constrained spatial region and return to the broader architectural context.
 
 The keyboard is not a mouse replacement. It is a different spatial navigation tool entirely—one that moves through space sequentially rather than spatially, like walking through a building room by room rather than flying over it.
 
@@ -154,14 +154,14 @@ Skip link rules:
 
 ### Roving Tabindex
 
-For composite widgets like tab bars and toolbars, roving tabindex manages focus within the widget without adding every item to the global tab order:
+For composite objects like tab bars and toolbars, roving tabindex manages focus within the object without adding every item to the global tab order:
 
 - Only one item has `tabindex="0"` (the active item)
 - Other items have `tabindex="-1"` (focusable but not in tab order)
 - Arrow keys move the `tabindex="0"` to the next item
-- Tab moves to the next widget (not the next item within the widget)
+- Tab moves to the next object (not the next item within the object)
 
-This pattern creates a spatial hierarchy within the widget: the widget is one object in the global tab order, and arrow keys navigate within its internal structure. It is like a filing cabinet—Tab moves between cabinets; arrow keys move between drawers within a cabinet.
+This pattern creates a spatial hierarchy within the object: the object is one object in the global tab order, and arrow keys navigate within its internal structure. It is like a filing cabinet—Tab moves between cabinets; arrow keys move between drawers within a cabinet.
 
 ### Focus Restoration
 

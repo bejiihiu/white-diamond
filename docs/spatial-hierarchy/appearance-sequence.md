@@ -263,7 +263,7 @@ When objects appear and disappear rapidly (e.g., user clicking multiple buttons)
 ### Accessibility Considerations
 
 For users with reduced motion preferences:
-- **Replace motion with opacity** — Objects fade in/out instead of sliding
+- **Replace motion with opacity** — Objects enter/exit viewport via opacity change instead of sliding
 - **Maintain timing** — The same duration applies, but without spatial movement
 - **Preserve spatial memory** — The origin and destination concepts are communicated through other means (e.g., position changes without animation)
 

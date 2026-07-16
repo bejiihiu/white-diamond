@@ -115,7 +115,7 @@ Hierarchical navigation has a clear direction (up toward parent, down toward chi
 Any space from any space. The user jumps between unrelated views:
 
 - **Global search** — The user searches for a term and navigates directly to the result.
-- **Dashboard widgets** — The user clicks a widget and navigates to the detailed view.
+- **Dashboard objects** — The user clicks an object and navigates to the detailed view.
 - **Cross-linking** — The user clicks a reference and navigates to the referenced content.
 
 Random navigation has no defined direction or sequence. The user can move freely between any two views. Back navigation and breadcrumbs are essential for orientation.

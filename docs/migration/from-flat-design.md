@@ -239,7 +239,7 @@ Without affordances, the user is navigating a painting. With affordances, the us
 
 Motion in WHITE DIAMOND is never decorative. It serves only to demonstrate spatial physics: objects have weight (they accelerate and decelerate), objects have origin (they move from somewhere to somewhere), and objects have depth (they scale as they move closer or farther).
 
-**Migration action:** Identify every state change in the interface (menu open/close, modal appear/disappear, content show/hide). For each state change, add motion that communicates the spatial origin and destination of the element.
+**Migration action:** Identify every state change in the interface (menu open/close, modal enter/exit viewport, content appear/disappear). For each state change, add motion that communicates the spatial origin and destination of the object.
 
 ## Common Pattern Migrations
 

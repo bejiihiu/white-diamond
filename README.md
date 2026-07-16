@@ -167,7 +167,17 @@ Recommended approaches derived from the principles.
 Moving from other systems. The divergence from established conventions.
 
 - [From Flat Design](docs/migration/from-flat-design.md) — Transitioning from flat to architectural
-- [From Material Design](docs/migration/from-material-material.md) — Divergence and adoption
+- [From Material Design](docs/migration/from-material-design.md) — Divergence and adoption
+
+### Case Studies
+
+Real-world validation of WHITE DIAMOND principles in production environments.
+
+- [Case Studies Overview](docs/case-studies/index.md) — Why case studies matter and how to read them
+- [E-commerce Product Listing](docs/case-studies/ecommerce-product-listing.md) — Consistent product cards with architectural boundaries
+- [SaaS Dashboard](docs/case-studies/saas-dashboard.md) — Structured data visualization with spatial hierarchy
+- [Mobile Navigation](docs/case-studies/mobile-navigation.md) — Wayfinding that adapts while maintaining integrity
+- [Form Design](docs/case-studies/form-design.md) — Data entry as spatial conversation
 
 ### Reference
 

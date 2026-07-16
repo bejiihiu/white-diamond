@@ -194,10 +194,10 @@ The modal never disappears. It always exits to the center, maintaining spatial c
 
 ### Timing Specifications
 
-- **Backdrop fade in** — 200ms transition for background dimming
-- **Modal scale up** — 300ms transition for modal appearance
-- **Modal scale down** — 200ms transition for modal departure
-- **Backdrop fade out** — 200ms transition for background brightening
+- **Backdrop viewport entry** — 200ms transition for background dimming
+- **Modal viewport entry** — 300ms transition for modal appearance
+- **Modal viewport exit** — 200ms transition for modal departure
+- **Backdrop viewport exit** — 200ms transition for background brightening
 - **Focus capture** — Immediate shift to modal, creating spatial focus
 - **Focus restoration** — Immediate shift to trigger, maintaining spatial context
 

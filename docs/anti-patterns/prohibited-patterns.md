@@ -306,7 +306,7 @@ Overlapping content           │ └─────────────┘ 
 
 **Prohibited:** Preventing right-click or context menus.
 
-**Why this violates WHITE DIAMOND:** Right-click prevention violates Axiom VIII (Absolute Control Through Predictability). Users expect right-click to work—it is a standard interaction pattern. Preventing it breaks the predictability that creates control.
+**Why this violates WHITE DIAMOND:** Right-click prevention violates Axiom VIII (Absolute Control Through Predictability). Users expect right-click to work—it is a standard behavioral contract. Preventing it breaks the predictability that creates control.
 
 **The cognitive cost:** Users who rely on right-click cannot access their expected functionality. The interface breaks their mental model, creating frustration.
 
@@ -322,7 +322,7 @@ Overlapping content           │ └─────────────┘ 
 
 **Prohibited:** Overriding browser scroll behavior.
 
-**Why this violates WHITE DIAMOND:** Scroll hijacking violates Axiom VIII (Absolute Control Through Predictability). Scroll is a fundamental interaction pattern—users expect it to work in specific ways. Overriding scroll breaks the predictability that creates control.
+**Why this violates WHITE DIAMOND:** Scroll hijacking violates Axiom VIII (Absolute Control Through Predictability). Scroll is a fundamental behavioral contract—users expect it to work in specific ways. Overriding scroll breaks the predictability that creates control.
 
 **The cognitive cost:** Users lose control of scrolling. The interface behaves differently from other interfaces, breaking the mental model that creates predictability.
 

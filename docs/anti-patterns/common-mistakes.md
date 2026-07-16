@@ -26,12 +26,12 @@ Every mistake has a cost. The cost is measured in cognitive load, spatial confus
 /* Prohibited */
 .card { margin: 15px; }
 .section { margin: 20px; }
-.widget { margin: 12px; }
+.object { margin: 12px; }
 
 /* Correct */
 .card { margin: var(--spacing-4); }
 .section { margin: var(--spacing-6); }
-.widget { margin: var(--spacing-4); }
+.object { margin: var(--spacing-4); }
 ```
 
 **What the fix communicates:** "Margins are consistent. The spacing system defines all spatial relationships. You can predict the distance between any two elements."

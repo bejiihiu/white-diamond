@@ -50,7 +50,7 @@ The ten axioms that define the foundational truths of WHITE DIAMOND. These are n
 
 **Prerequisites:** None
 **Dependents:** All other specifications
-**Cross-references:** [Design Philosophy](design-philosophy.md), [Architectural Thinking](architectural-thinking.md)
+**Cross-references:** [Design Philosophy](../philosophy/design-philosophy.md), [Architectural Thinking](../philosophy/architectural-thinking.md)
 
 ---
 
@@ -70,9 +70,9 @@ The worldview that shapes all WHITE DIAMOND decisions. This document explains ho
 - Error Prevention Over Error Recovery — The best error message is no error message
 - Accessibility Is Not a Feature — A property of well-designed interfaces
 
-**Prerequisites:** [Core Principles](core-principles.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md)
 **Dependents:** All specification documents
-**Cross-references:** [Architectural Thinking](architectural-thinking.md)
+**Cross-references:** [Architectural Thinking](../philosophy/architectural-thinking.md)
 
 ---
 
@@ -88,7 +88,7 @@ The discipline of seeing interfaces as structures, not collections. This documen
 - Architectural Patterns: Container, Flow, State, Feedback
 - Mental Models: Viewport, Structural, Hierarchy, Flow, Layer
 
-**Prerequisites:** [Core Principles](core-principles.md), [Design Philosophy](design-philosophy.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Design Philosophy](../philosophy/design-philosophy.md)
 **Dependents:** All specification documents
 **Cross-references:** [Space Behavior](../space-physics/space-behavior.md), [Composition Rules](../layout/composition-rules.md)
 
@@ -126,9 +126,9 @@ How objects define their limits and communicate their presence through boundarie
 - The relationship between boundaries and borders
 - How boundaries create spatial understanding
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Space Geometry](space-geometry.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Space Geometry](../geometry/space-geometry.md)
 **Dependents:** [Border System](../tokens/border-system.md), [Object Structure](../spatial-hierarchy/object-structure.md)
-**Cross-references:** [Geometric Rules](geometric-rules.md)
+**Cross-references:** [Geometric Rules](../geometry/geometric-rules.md)
 
 ---
 
@@ -143,9 +143,9 @@ Rules governing geometric relationships — why only rectangles, how alignment w
 - Alignment and grid relationships
 - Radius as a modification of rectangular geometry
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Space Geometry](space-geometry.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Space Geometry](../geometry/space-geometry.md)
 **Dependents:** [Grid System](../layout/grid-system.md), [Composition Rules](../layout/composition-rules.md)
-**Cross-references:** [Object Boundaries](object-boundaries.md)
+**Cross-references:** [Object Boundaries](../geometry/object-boundaries.md)
 
 ---
 
@@ -161,9 +161,9 @@ How space responds to objects — density, pressure, gravity, and temperature as
 - Gravity as the tendency toward structural anchors
 - Temperature as emotional quality of spatial regions
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Space Geometry](space-geometry.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Space Geometry](../geometry/space-geometry.md)
 **Dependents:** [Spacing System](../tokens/spacing-system.md), [Composition Rules](../layout/composition-rules.md)
-**Cross-references:** [Object Existence](object-existence.md)
+**Cross-references:** [Object Existence](../space-physics/object-existence.md)
 
 ---
 
@@ -179,9 +179,9 @@ How objects exist in space — position, weight, volume, and persistence.
 - Objects persist outside the viewport
 - Objects enter and exit the viewport (never appear/disappear)
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Space Behavior](space-behavior.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Space Behavior](../space-physics/space-behavior.md)
 **Dependents:** [Object Structure](../spatial-hierarchy/object-structure.md), [Animation Principles](../motion/animation-principles.md)
-**Cross-references:** [Screen as Window](screen-as-window.md)
+**Cross-references:** [Screen as Window](../space-physics/screen-as-window.md)
 
 ---
 
@@ -197,8 +197,8 @@ The viewport metaphor — the screen as a window into infinite space, not a canv
 - Content persistence outside viewport
 
 **Prerequisites:** [Core Principles](../philosophy/core-principles.md)
-**Dependents:** [Object Existence](object-existence.md), [Animation Principles](../motion/animation-principles.md)
-**Cross-references:** [Space Geometry](space-geometry.md)
+**Dependents:** [Object Existence](../space-physics/object-existence.md), [Animation Principles](../motion/animation-principles.md)
+**Cross-references:** [Space Geometry](../geometry/space-geometry.md)
 
 ---
 
@@ -219,7 +219,7 @@ How objects are structured — the three-layer hierarchy and its application to 
 
 **Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Object Boundaries](../geometry/object-boundaries.md), [Object Existence](../space-physics/object-existence.md)
 **Dependents:** [Component Philosophy](../components/component-philosophy.md), [Button Specification](../components/button-specification.md)
-**Cross-references:** [Depth Perception](depth-perception.md)
+**Cross-references:** [Depth Perception](../spatial-hierarchy/depth-perception.md)
 
 ---
 
@@ -253,7 +253,7 @@ Creating spatial depth on a two-dimensional screen through layering, shadows, an
 - Shadows as depth communication
 - Overlap as spatial relationship
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Object Structure](object-structure.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Object Structure](../spatial-hierarchy/object-structure.md)
 **Dependents:** [Animation Principles](../motion/animation-principles.md), [Component Philosophy](../components/component-philosophy.md)
 **Cross-references:** [Space Behavior](../space-physics/space-behavior.md)
 
@@ -294,7 +294,7 @@ What motion should never do — animations that violate spatial physics.
 - Fade without movement — Implies appearing from nothing
 - Emphasis without spatial meaning — Motion without structural revelation
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Animation Principles](animation-principles.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Animation Principles](../motion/animation-principles.md)
 **Dependents:** None (constrains other specifications)
 **Cross-references:** [Recommended Approaches](../best-practices/recommended-approaches.md)
 
@@ -312,9 +312,9 @@ Physical laws of digital motion — how mass, inertia, and friction translate to
 - Friction as the force that slows motion
 - Easing functions as the expression of physical forces
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Animation Principles](animation-principles.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Animation Principles](../motion/animation-principles.md)
 **Dependents:** [Component Specifications](../components/component-philosophy.md)
-**Cross-references:** [Movement Physics](movement-physics.md)
+**Cross-references:** [Animation Principles](../motion/animation-principles.md)
 
 ---
 
@@ -335,7 +335,7 @@ Typography foundations — font families, sizes, weights, and their relationship
 - Line height as vertical rhythm
 
 **Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Space Geometry](../geometry/space-geometry.md)
-**Dependents:** [Text Hierarchy](text-hierarchy.md), [Text in Space](text-in-space.md)
+**Dependents:** [Text Hierarchy](../typography/text-hierarchy.md), [Text in Space](../typography/text-in-space.md)
 **Cross-references:** [Spacing System](../tokens/spacing-system.md)
 
 ---
@@ -352,7 +352,7 @@ Organizing text by importance — how typographic properties communicate hierarc
 - Color as tertiary hierarchy mechanism
 - Spacing as hierarchical separation
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Type System](type-system.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Type System](../typography/type-system.md)
 **Dependents:** [Composition Rules](../layout/composition-rules.md)
 **Cross-references:** [Hierarchy Creates Navigation](../philosophy/architectural-thinking.md#hierarchy-creates-navigation)
 
@@ -370,7 +370,7 @@ Typography and spatial relationships — how text interacts with the spatial str
 - Text alignment and spatial structure
 - Inline vs. block text elements
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Type System](type-system.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Type System](../typography/type-system.md)
 **Dependents:** [Composition Rules](../layout/composition-rules.md)
 **Cross-references:** [Space Geometry](../geometry/space-geometry.md)
 
@@ -394,7 +394,7 @@ Rules for arranging elements — the spatial logic of layout.
 - Balance as spatial weight distribution
 
 **Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Space Geometry](../geometry/space-geometry.md), [Geometric Rules](../geometry/geometric-rules.md), [Text Hierarchy](../typography/text-hierarchy.md)
-**Dependents:** [Grid System](grid-system.md), [Spatial Layout](spatial-layout.md)
+**Dependents:** [Grid System](../layout/grid-system.md), [Spatial Layout](../layout/spatial-layout.md)
 **Cross-references:** [Architectural Thinking](../philosophy/architectural-thinking.md)
 
 ---
@@ -411,8 +411,8 @@ Spatial organization systems — how grids define alignment and proportion.
 - Responsive grid adaptation
 - Grid as the invisible structure of spatial construction
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Geometric Rules](../geometry/geometric-rules.md), [Composition Rules](composition-rules.md)
-**Dependents:** [Spatial Layout](spatial-layout.md), [Component Specifications](../components/component-philosophy.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Geometric Rules](../geometry/geometric-rules.md), [Composition Rules](../layout/composition-rules.md)
+**Dependents:** [Spatial Layout](../layout/spatial-layout.md), [Component Specifications](../components/component-philosophy.md)
 **Cross-references:** [Spacing System](../tokens/spacing-system.md)
 
 ---
@@ -428,7 +428,7 @@ Layout as spatial arrangement — how spatial thinking informs layout decisions.
 - Spatial relationships: containment, separation, proximity, alignment
 - Responsive layout as spatial adaptation
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Composition Rules](composition-rules.md), [Grid System](grid-system.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Composition Rules](../layout/composition-rules.md), [Grid System](../layout/grid-system.md)
 **Dependents:** [Component Specifications](../components/component-philosophy.md)
 **Cross-references:** [Space Behavior](../space-physics/space-behavior.md)
 
@@ -451,7 +451,7 @@ Why components exist and how they relate to architectural construction.
 - Component composition as architectural assembly
 
 **Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Object Structure](../spatial-hierarchy/object-structure.md), [Depth Perception](../spatial-hierarchy/depth-perception.md)
-**Dependents:** [Button Specification](button-specification.md), [Input Specification](input-specification.md), [Card Specification](card-specification.md), [Modal Specification](modal-specification.md), [Navigation Specification](navigation-specification.md)
+**Dependents:** [Button Specification](../components/button-specification.md), [Input Specification](../components/input-specification.md), [Card Specification](../components/card-specification.md), [Modal Specification](../components/modal-specification.md), [Navigation Specification](../components/navigation-specification.md)
 **Cross-references:** [Animation Principles](../motion/animation-principles.md)
 
 ---
@@ -468,9 +468,9 @@ The button as a primitive — behavior, states, and spatial properties.
 - Button hierarchy: primary, secondary, tertiary
 - Button spatial properties: size, padding, border, radius
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Component Philosophy](component-philosophy.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Component Philosophy](../components/component-philosophy.md)
 **Dependents:** None (leaf specification)
-**Cross-references:** [Input Specification](input-specification.md)
+**Cross-references:** [Input Specification](../components/input-specification.md)
 
 ---
 
@@ -486,9 +486,9 @@ Input behavior and constraints — how data collection elements work.
 - Input types: text, number, select, checkbox, radio
 - Input validation as error prevention
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Component Philosophy](component-philosophy.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Component Philosophy](../components/component-philosophy.md)
 **Dependents:** None (leaf specification)
-**Cross-references:** [Button Specification](button-specification.md), [Accessibility Guidelines](../accessibility/accessibility-guidelines.md)
+**Cross-references:** [Button Specification](../components/button-specification.md), [Accessibility Guidelines](../accessibility/accessibility-guidelines.md)
 
 ---
 
@@ -504,9 +504,9 @@ Cards as content containers — spatial properties and composition.
 - Card composition: header, body, footer
 - Card hierarchy through visual weight
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Component Philosophy](component-philosophy.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Component Philosophy](../components/component-philosophy.md)
 **Dependents:** None (leaf specification)
-**Cross-references:** [Modal Specification](modal-specification.md)
+**Cross-references:** [Modal Specification](../components/modal-specification.md)
 
 ---
 
@@ -522,9 +522,9 @@ Overlays and focused interaction — how modals create spatial planes.
 - Modal exit as layer removal
 - Modal spatial properties: overlay, border, shadow
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Component Philosophy](component-philosophy.md), [Depth Perception](../spatial-hierarchy/depth-perception.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Component Philosophy](../components/component-philosophy.md), [Depth Perception](../spatial-hierarchy/depth-perception.md)
 **Dependents:** None (leaf specification)
-**Cross-references:** [Card Specification](card-specification.md)
+**Cross-references:** [Card Specification](../components/card-specification.md)
 
 ---
 
@@ -540,7 +540,7 @@ Wayfinding and movement — how navigation elements guide users through spatial 
 - Navigation states: active, inactive, disabled
 - Navigation hierarchy: primary, secondary, tertiary
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Component Philosophy](component-philosophy.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Component Philosophy](../components/component-philosophy.md)
 **Dependents:** None (leaf specification)
 **Cross-references:** [Composition Rules](../layout/composition-rules.md)
 
@@ -563,7 +563,7 @@ The atomic values — colors, spacing, borders, typography that form the design 
 - Token documentation and usage
 
 **Prerequisites:** [Core Principles](../philosophy/core-principles.md)
-**Dependents:** [Color System](color-system.md), [Spacing System](spacing-system.md), [Border System](border-system.md)
+**Dependents:** [Color System](../tokens/color-system.md), [Spacing System](../tokens/spacing-system.md), [Border System](../tokens/border-system.md)
 **Cross-references:** [Component Specifications](../components/component-philosophy.md)
 
 ---
@@ -580,7 +580,7 @@ Color as information — how color communicates hierarchy, state, and meaning.
 - Color contrast requirements
 - Dark mode as color adaptation
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Design Tokens](design-tokens.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Design Tokens](../tokens/design-tokens.md)
 **Dependents:** [Component Specifications](../components/component-philosophy.md)
 **Cross-references:** [Accessibility Guidelines](../accessibility/accessibility-guidelines.md)
 
@@ -617,9 +617,9 @@ Edges and boundaries — how borders define spatial structure.
 - Border properties: width, color, style, radius
 - Border as spatial infrastructure
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Design Tokens](design-tokens.md), [Object Boundaries](../geometry/object-boundaries.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Design Tokens](../tokens/design-tokens.md), [Object Boundaries](../geometry/object-boundaries.md)
 **Dependents:** [Component Specifications](../components/component-philosophy.md)
-**Cross-references:** [Spacing System](spacing-system.md)
+**Cross-references:** [Spacing System](../tokens/spacing-system.md)
 
 ---
 
@@ -640,7 +640,7 @@ Universal access principles — how to ensure interfaces work for users with dis
 - Semantic HTML requirements
 
 **Prerequisites:** [Core Principles](../philosophy/core-principles.md)
-**Dependents:** [Keyboard Navigation](keyboard-navigation.md), [Screen Readers](screen-readers.md)
+**Dependents:** [Keyboard Navigation](../accessibility/keyboard-navigation.md), [Screen Readers](../accessibility/screen-readers.md)
 **Cross-references:** [Component Specifications](../components/component-philosophy.md)
 
 ---
@@ -657,7 +657,7 @@ Non-pointer interaction — how to ensure interfaces work without a mouse.
 - Keyboard shortcuts as spatial shortcuts
 - No keyboard traps
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Accessibility Guidelines](accessibility-guidelines.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Accessibility Guidelines](../accessibility/accessibility-guidelines.md)
 **Dependents:** None (constrains other specifications)
 **Cross-references:** [Component Specifications](../components/component-philosophy.md)
 
@@ -675,7 +675,7 @@ Non-visual access — how to ensure interfaces work without seeing the screen.
 - Live regions as temporal communication
 - Alternative text as content communication
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Accessibility Guidelines](accessibility-guidelines.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [Accessibility Guidelines](../accessibility/accessibility-guidelines.md)
 **Dependents:** None (constrains other specifications)
 **Cross-references:** [Component Specifications](../components/component-philosophy.md)
 
@@ -698,7 +698,7 @@ How users think and feel — the cognitive science behind interface design.
 - Trust as predictable outcomes
 
 **Prerequisites:** [Core Principles](../philosophy/core-principles.md)
-**Dependents:** [Control Feeling](control-feeling.md), [Cognitive Load](cognitive-load.md)
+**Dependents:** [Control Feeling](../psychology/control-feeling.md), [Cognitive Load](../psychology/cognitive-load.md)
 **Cross-references:** [Design Philosophy](../philosophy/design-philosophy.md)
 
 ---
@@ -715,7 +715,7 @@ The sense of agency — how users feel in control of the interface.
 - Predictability as the foundation of trust
 - Feedback as the communication of control
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [User Psychology](user-psychology.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [User Psychology](../psychology/user-psychology.md)
 **Dependents:** None (constrains other specifications)
 **Cross-references:** [Animation Principles](../motion/animation-principles.md)
 
@@ -733,7 +733,7 @@ Mental effort and clarity — how interfaces affect the brain's processing capac
 - Progressive disclosure as load reduction
 - Hierarchy as load management
 
-**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [User Psychology](user-psychology.md)
+**Prerequisites:** [Core Principles](../philosophy/core-principles.md), [User Psychology](../psychology/user-psychology.md)
 **Dependents:** None (constrains other specifications)
 **Cross-references:** [Composition Rules](../layout/composition-rules.md)
 

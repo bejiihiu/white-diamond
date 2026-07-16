@@ -190,7 +190,7 @@ Motion that contradicts platform conventions is prohibited. This includes:
 
 - **Desktop-style motion on mobile** — Mouse-oriented animations on touch devices. This violates the principle that motion should be appropriate—desktop-style motion doesn't account for touch interactions.
 
-**Alternative:** Follow platform-specific motion guidelines.
+**Alternative:** Follow platform-specific motion principles.
 
 ### No Device-Inappropriate Motion
 
