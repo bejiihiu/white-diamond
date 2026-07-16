@@ -42,48 +42,48 @@ Primitive colors are **raw chromatic values without semantic meaning**. They are
 
 #### Primary Scale
 
-| Token | Value | Role |
-|-------|-------|------|
-| `blue-50` | `#EFF6FF` | Lightest tint |
-| `blue-100` | `#DBEAFE` | Light tint |
-| `blue-200` | `#BFDBFE` | Light medium |
-| `blue-300` | `#93C5FD` | Medium light |
-| `blue-400` | `#60A5FA` | Medium |
+| Token      | Value     | Role          |
+| ---------- | --------- | ------------- |
+| `blue-50`  | `#EFF6FF` | Lightest tint |
+| `blue-100` | `#DBEAFE` | Light tint    |
+| `blue-200` | `#BFDBFE` | Light medium  |
+| `blue-300` | `#93C5FD` | Medium light  |
+| `blue-400` | `#60A5FA` | Medium        |
 | `blue-500` | `#3B82F6` | Primary value |
-| `blue-600` | `#2563EB` | Dark primary |
-| `blue-700` | `#1D4ED8` | Darker |
-| `blue-800` | `#1E40AF` | Very dark |
-| `blue-900` | `#1E3A8A` | Darkest |
+| `blue-600` | `#2563EB` | Dark primary  |
+| `blue-700` | `#1D4ED8` | Darker        |
+| `blue-800` | `#1E40AF` | Very dark     |
+| `blue-900` | `#1E3A8A` | Darkest       |
 
 #### Neutral Scale
 
-| Token | Value | Role |
-|-------|-------|------|
-| `gray-50` | `#F9FAFB` | Near white |
+| Token      | Value     | Role          |
+| ---------- | --------- | ------------- |
+| `gray-50`  | `#F9FAFB` | Near white    |
 | `gray-100` | `#F3F4F6` | Lightest gray |
-| `gray-200` | `#E5E7EB` | Light gray |
-| `gray-300` | `#D1D5DB` | Medium light |
-| `gray-400` | `#9CA3AF` | Medium |
-| `gray-500` | `#6B7280` | Medium dark |
-| `gray-600` | `#4B5563` | Dark gray |
-| `gray-700` | `#374151` | Darker |
-| `gray-800` | `#1F2937` | Very dark |
-| `gray-900` | `#111827` | Near black |
+| `gray-200` | `#E5E7EB` | Light gray    |
+| `gray-300` | `#D1D5DB` | Medium light  |
+| `gray-400` | `#9CA3AF` | Medium        |
+| `gray-500` | `#6B7280` | Medium dark   |
+| `gray-600` | `#4B5563` | Dark gray     |
+| `gray-700` | `#374151` | Darker        |
+| `gray-800` | `#1F2937` | Very dark     |
+| `gray-900` | `#111827` | Near black    |
 
 #### Semantic Scales
 
-| Scale | 500 Value | Purpose |
-|-------|-----------|---------|
-| `green` | `#22C55E` | Success, positive |
-| `red` | `#EF4444` | Error, destructive |
-| `amber` | `#F59E0B` | Warning, caution |
-| `cyan` | `#06B6D4` | Information, neutral |
+| Scale   | 500 Value | Purpose              |
+| ------- | --------- | -------------------- |
+| `green` | `#22C55E` | Success, positive    |
+| `red`   | `#EF4444` | Error, destructive   |
+| `amber` | `#F59E0B` | Warning, caution     |
+| `cyan`  | `#06B6D4` | Information, neutral |
 
 Each scale has 10 values (50-900) to provide flexibility across contexts. The 500 value is the "canonical" use; lighter values (50-300) serve backgrounds; darker values (600-900) serve text and emphasis.
 
 ### Layer 2: Semantic Colors
 
-Semantic colors **assign meaning to primitive colors**. They answer: "What is this color *for*?"
+Semantic colors **assign meaning to primitive colors**. They answer: "What is this color _for_?"
 
 ```
 color-primary: {blue-500}
@@ -115,35 +115,35 @@ Functional colors **serve specific interface roles**:
 
 #### Text Colors
 
-| Token | Reference | Usage | Contrast |
-|-------|-----------|-------|----------|
-| `color-text-primary` | `gray-900` | Headings, emphasis | 17.4:1 on white |
-| `color-text-secondary` | `gray-600` | Body text | 7.4:1 on white |
-| `color-text-tertiary` | `gray-400` | Captions, hints | 3.9:1 on white |
-| `color-text-disabled` | `gray-300` | Unavailable text | 2.3:1 on white |
-| `color-text-inverse` | `gray-50` | Text on dark backgrounds | 18.4:1 on gray-900 |
+| Token                  | Reference  | Usage                    | Contrast           |
+| ---------------------- | ---------- | ------------------------ | ------------------ |
+| `color-text-primary`   | `gray-900` | Headings, emphasis       | 17.4:1 on white    |
+| `color-text-secondary` | `gray-600` | Body text                | 7.4:1 on white     |
+| `color-text-tertiary`  | `gray-400` | Captions, hints          | 3.9:1 on white     |
+| `color-text-disabled`  | `gray-300` | Unavailable text         | 2.3:1 on white     |
+| `color-text-inverse`   | `gray-50`  | Text on dark backgrounds | 18.4:1 on gray-900 |
 
 #### Background Colors
 
-| Token | Reference | Usage |
-|-------|-----------|-------|
-| `color-bg-page` | `gray-50` | Page background |
-| `color-bg-surface` | `white` | Card, modal background |
-| `color-bg-elevated` | `white` | Elevated surface |
-| `color-bg-hover` | `gray-100` | Hover state |
-| `color-bg-active` | `gray-200` | Active/pressed state |
-| `color-bg-disabled` | `gray-100` | Disabled background |
+| Token               | Reference  | Usage                  |
+| ------------------- | ---------- | ---------------------- |
+| `color-bg-page`     | `gray-50`  | Page background        |
+| `color-bg-surface`  | `white`    | Card, modal background |
+| `color-bg-elevated` | `white`    | Elevated surface       |
+| `color-bg-hover`    | `gray-100` | Hover state            |
+| `color-bg-active`   | `gray-200` | Active/pressed state   |
+| `color-bg-disabled` | `gray-100` | Disabled background    |
 
 #### Border Colors
 
-| Token | Reference | Usage |
-|-------|-----------|-------|
-| `color-border-subtle` | `gray-200` | Subtle separation |
-| `color-border-default` | `gray-300` | Standard borders |
-| `color-border-strong` | `gray-400` | Emphasis borders |
-| `color-border-focus` | `blue-500` | Focus indicators |
-| `color-border-error` | `red-500` | Error states |
-| `color-border-success` | `green-500` | Success states |
+| Token                  | Reference   | Usage             |
+| ---------------------- | ----------- | ----------------- |
+| `color-border-subtle`  | `gray-200`  | Subtle separation |
+| `color-border-default` | `gray-300`  | Standard borders  |
+| `color-border-strong`  | `gray-400`  | Emphasis borders  |
+| `color-border-focus`   | `blue-500`  | Focus indicators  |
+| `color-border-error`   | `red-500`   | Error states      |
+| `color-border-success` | `green-500` | Success states    |
 
 ### Layer 4: Interactive Colors
 
@@ -151,25 +151,25 @@ Interactive colors **indicate element states**:
 
 #### Link Colors
 
-| Token | Reference | Usage |
-|-------|-----------|-------|
-| `color-link-default` | `blue-600` | Default link |
-| `color-link-hover` | `blue-700` | Hovered link |
-| `color-link-active` | `blue-800` | Active link |
+| Token                | Reference    | Usage        |
+| -------------------- | ------------ | ------------ |
+| `color-link-default` | `blue-600`   | Default link |
+| `color-link-hover`   | `blue-700`   | Hovered link |
+| `color-link-active`  | `blue-800`   | Active link  |
 | `color-link-visited` | `purple-600` | Visited link |
 
 #### Button Colors
 
-| Token | Reference | Usage |
-|-------|-----------|-------|
-| `color-btn-primary-bg` | `blue-500` | Primary button background |
-| `color-btn-primary-bg-hover` | `blue-600` | Primary button hover |
-| `color-btn-primary-text` | `white` | Primary button text |
-| `color-btn-secondary-bg` | `white` | Secondary button background |
-| `color-btn-secondary-border` | `gray-300` | Secondary button border |
-| `color-btn-secondary-text` | `gray-700` | Secondary button text |
-| `color-btn-disabled-bg` | `gray-100` | Disabled button background |
-| `color-btn-disabled-text` | `gray-300` | Disabled button text |
+| Token                        | Reference  | Usage                       |
+| ---------------------------- | ---------- | --------------------------- |
+| `color-btn-primary-bg`       | `blue-500` | Primary button background   |
+| `color-btn-primary-bg-hover` | `blue-600` | Primary button hover        |
+| `color-btn-primary-text`     | `white`    | Primary button text         |
+| `color-btn-secondary-bg`     | `white`    | Secondary button background |
+| `color-btn-secondary-border` | `gray-300` | Secondary button border     |
+| `color-btn-secondary-text`   | `gray-700` | Secondary button text       |
+| `color-btn-disabled-bg`      | `gray-100` | Disabled button background  |
+| `color-btn-disabled-text`    | `gray-300` | Disabled button text        |
 
 ### Layer 5: Component Colors
 
@@ -201,27 +201,27 @@ modal-border: {color-border-default}
 
 Every color combination must meet WCAG 2.1 contrast requirements:
 
-| Context | Minimum Ratio | Target Ratio |
-|---------|---------------|--------------|
-| Normal text (< 18px) | 4.5:1 | 7:1 |
-| Large text (≥ 18px bold or ≥ 24px) | 3:1 | 4.5:1 |
-| UI components | 3:1 | 4.5:1 |
-| Focus indicators | 3:1 | 4.5:1 |
+| Context                            | Minimum Ratio | Target Ratio |
+| ---------------------------------- | ------------- | ------------ |
+| Normal text (< 18px)               | 4.5:1         | 7:1          |
+| Large text (≥ 18px bold or ≥ 24px) | 3:1           | 4.5:1        |
+| UI components                      | 3:1           | 4.5:1        |
+| Focus indicators                   | 3:1           | 4.5:1        |
 
 ### Contrast Calculations
 
 The following combinations meet minimum requirements:
 
-| Foreground | Background | Ratio | Pass |
-|------------|------------|-------|------|
-| `gray-900` | `white` | 17.4:1 | AAA |
-| `gray-600` | `white` | 7.4:1 | AAA |
-| `gray-400` | `white` | 3.9:1 | AA |
-| `blue-500` | `white` | 4.6:1 | AA |
-| `red-500` | `white` | 4.5:1 | AA |
-| `green-500` | `white` | 4.6:1 | AA |
-| `white` | `gray-900` | 18.4:1 | AAA |
-| `white` | `blue-500` | 4.6:1 | AA |
+| Foreground  | Background | Ratio  | Pass |
+| ----------- | ---------- | ------ | ---- |
+| `gray-900`  | `white`    | 17.4:1 | AAA  |
+| `gray-600`  | `white`    | 7.4:1  | AAA  |
+| `gray-400`  | `white`    | 3.9:1  | AA   |
+| `blue-500`  | `white`    | 4.6:1  | AA   |
+| `red-500`   | `white`    | 4.5:1  | AA   |
+| `green-500` | `white`    | 4.6:1  | AA   |
+| `white`     | `gray-900` | 18.4:1 | AAA  |
+| `white`     | `blue-500` | 4.6:1  | AA   |
 
 ### Color Independence
 
@@ -248,6 +248,7 @@ The same color must be used for the same purpose everywhere. `color-error` is al
 ### Rule 3: Colors Are Limited
 
 Too many colors create visual chaos. The system provides:
+
 - 2-3 brand colors (primary, secondary, accent)
 - 1 neutral scale (10 values)
 - 4 semantic colors (success, warning, error, info)
@@ -261,6 +262,7 @@ Every color combination must meet contrast requirements. If a combination fails,
 ### Rule 5: Colors Are Themeable
 
 Colors must support multiple themes through alias token remapping:
+
 - **Light theme** — Dark text on light backgrounds
 - **Dark theme** — Light text on dark backgrounds
 - **High contrast** — Enhanced contrast ratios
@@ -275,6 +277,7 @@ Themes change values, not purposes. `color-text-primary` is always primary text,
 ### Text Application
 
 Text colors follow a strict hierarchy:
+
 1. **Primary text** — `gray-900` on `white` — Headings, emphasis
 2. **Secondary text** — `gray-600` on `white` — Body text, descriptions
 3. **Tertiary text** — `gray-400` on `white` — Captions, hints, timestamps
@@ -284,6 +287,7 @@ Text colors follow a strict hierarchy:
 ### Background Application
 
 Backgrounds establish spatial hierarchy:
+
 1. **Page background** — `gray-50` — Lowest level, provides contrast
 2. **Surface background** — `white` — Cards, modals, elevated elements
 3. **Hover background** — `gray-100` — Interactive feedback
@@ -293,6 +297,7 @@ Backgrounds establish spatial hierarchy:
 ### Border Application
 
 Borders communicate boundaries and states:
+
 1. **Subtle borders** — `gray-200` — Light separation between surfaces
 2. **Default borders** — `gray-300` — Standard element boundaries
 3. **Strong borders** — `gray-400` — Emphasis, importance
