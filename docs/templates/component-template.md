@@ -2,9 +2,62 @@
 
 ## Why This Matters
 
-Component templates provide a starting point for new components, ensuring consistent structure and applying WHITE DIAMOND principles from the start.
+A component is not a UI element. It is an **architectural construction** — a rectangular object with defined boundaries, a physical surface, and meaningful content. The component template provides the structural foundation for defining these constructions with the precision that WHITE DIAMOND demands.
 
-## Component Structure
+Without a template, component specifications would vary in structure, depth, and rigor. Some would explain reasoning; others would not. Some would include anti-patterns; others would not. The template ensures that every component specification meets the same architectural standard, making the system coherent and complete.
+
+## The Three-Layer Model
+
+Every component in WHITE DIAMOND follows the three-layer hierarchy. This is not optional — it is a law:
+
+1. **Physical Boundary** — The outermost edge of the component. Defines the extent of the object in space. Without a physical boundary, the object does not exist.
+
+2. **Inner Surface** — The material layer between the boundary and the content. Defines the object's substance. Without an inner surface, the boundary is empty and meaningless.
+
+3. **Content** — The semantic payload. The information or interaction that the component exists to deliver. Without content, the component is an empty vessel.
+
+Every component specification must address all three layers explicitly. The template provides the structure for doing this consistently.
+
+## Component Specification Structure
+
+Every component specification must follow this structure:
+
+```markdown
+# [Component Name]
+
+## Why This Matters
+[Explain the architectural problem this component solves]
+[Explain what happens without this component]
+
+## Physical Boundary
+[Define the component's extent, borders, and spatial dimensions]
+
+## Inner Surface
+[Define the component's material, background, and surface properties]
+
+## Content
+[Define the semantic payload and its hierarchy]
+
+## States
+[Define all possible states and their visual properties]
+
+## Interaction
+[Define how the user interacts with the component]
+
+## Rules
+[Specific, testable rules governing the component]
+
+## Examples
+[Concrete demonstrations of correct application]
+
+## Anti-Patterns
+[What is explicitly prohibited and why]
+
+## Cross-References
+[Links to related specifications]
+```
+
+## Component HTML Structure
 
 ```html
 <div class="component" role="..." aria-...>
@@ -25,7 +78,21 @@ Component templates provide a starting point for new components, ensuring consis
 </div>
 ```
 
-## Button Template
+### Why This Structure
+
+The HTML structure mirrors the three-layer hierarchy:
+
+- The outer `<div class="component">` represents the **Physical Boundary**. It defines the component's extent in space.
+- The inner `<div class="component-header">`, `<div class="component-content">`, and `<div class="component-footer">` represent the **Inner Surface** and **Content** layers.
+- The content within these divs represents the **Content** layer.
+
+The `role` and `aria-*` attributes are mandatory because they communicate the component's purpose to assistive technologies. A component without proper ARIA attributes is architecturally incomplete because it excludes users who rely on screen readers.
+
+## Button Specification
+
+The button is the most fundamental interactive component. It is a rectangular object that responds to user input with physical feedback.
+
+### HTML
 
 ```html
 <button 
@@ -40,7 +107,7 @@ Component templates provide a starting point for new components, ensuring consis
 </button>
 ```
 
-### Button CSS
+### CSS
 
 ```css
 .button {
@@ -90,7 +157,29 @@ Component templates provide a starting point for new components, ensuring consis
 }
 ```
 
-## Input Template
+### Why `border: none` on Primary Buttons
+
+The primary button uses `border: none` because its background color provides sufficient visual boundary. The background color IS the physical boundary in this case. However, the secondary button requires `border: 1px solid` because it has a transparent background — without a border, the secondary button would have no physical boundary and would not exist as a distinct object.
+
+### Why `transform: scale(0.98)` on Active State
+
+The `scale(0.98)` transform provides physical feedback that the button is being pressed. This is not decoration — it communicates the physical interaction between the user and the button. The scale is subtle (2% reduction) because the button is a small object, and large-scale transforms would feel unrealistic.
+
+### Why `transition: all 100ms` Is Used
+
+The 100ms transition provides feedback that a state change has occurred. It is short enough to feel responsive but long enough to be perceptible. Transitions longer than 200ms feel sluggish; transitions shorter than 50ms feel abrupt.
+
+### Anti-Patterns
+
+- **Circular buttons.** Circular buttons violate the rectangle constraint. They are not architectural objects.
+- **Buttons without borders.** Buttons without borders (and without background colors) have no physical boundary. They do not exist as distinct objects.
+- **Decorative hover effects.** Hover effects that add shadows, glows, or color shifts beyond the defined states are decorative animation, which is forbidden.
+
+## Input Specification
+
+The input is a data entry component. It is a rectangular object that accepts user input and provides visual feedback about its state.
+
+### HTML
 
 ```html
 <div class="input-group">
@@ -115,7 +204,7 @@ Component templates provide a starting point for new components, ensuring consis
 </div>
 ```
 
-### Input CSS
+### CSS
 
 ```css
 .input-group {
@@ -179,7 +268,29 @@ Component templates provide a starting point for new components, ensuring consis
 }
 ```
 
-## Card Template
+### Why Labels Are Mandatory
+
+Labels are not optional. They are the semantic content layer of the input. Without a label, the input has no meaning — it is an empty vessel. The `for` attribute connects the label to the input, creating a semantic relationship that assistive technologies depend on.
+
+### Why `border: 1px solid` Is Required
+
+The input's border defines its physical boundary. Without a border, the input has no extent — it merges with the surrounding space. The border color changes to communicate state (hover, focus, error) because the border is the primary visual indicator of the input's boundary.
+
+### Why `box-shadow` on Focus
+
+The focus ring (`box-shadow: 0 0 0 2px var(--color-focus)`) provides a clear visual indicator that the input is focused. This is not decoration — it is essential for keyboard navigation. Without a visible focus indicator, keyboard users cannot determine which input is active.
+
+### Anti-Patterns
+
+- **Inputs without labels.** Inputs without labels are meaningless. They violate the content layer principle.
+- **Inputs without borders.** Inputs without borders have no physical boundary. They do not exist as distinct objects.
+- **Floating labels.** Floating labels move, which violates the principle of absolute control. The user should not have to track moving elements.
+
+## Card Specification
+
+The card is a content container. It groups related information into a single rectangular object with defined boundaries.
+
+### HTML
 
 ```html
 <article class="card">
@@ -196,7 +307,7 @@ Component templates provide a starting point for new components, ensuring consis
 </article>
 ```
 
-### Card CSS
+### CSS
 
 ```css
 .card {
@@ -238,7 +349,29 @@ Component templates provide a starting point for new components, ensuring consis
 }
 ```
 
-## Modal Template
+### Why `border: 1px solid` Is Required
+
+The card's border defines its physical boundary. Without a border, the card has no extent — it merges with the background. The border is the existential marker that makes the card a distinct object.
+
+### Why `box-shadow` Changes on Hover
+
+The shadow change on hover communicates that the card is interactive. The shadow becomes more pronounced to suggest the card is lifting slightly in space — a physical response to user interaction. This is not decoration; it is spatial communication.
+
+### Why Cards Use `<article>` Element
+
+The `<article>` element communicates that the card is a self-contained piece of content. This semantic choice reflects the card's architectural role: a bounded container for meaningful content.
+
+### Anti-Patterns
+
+- **Cards without borders.** Cards without borders have no physical boundary. They are not distinct objects.
+- **Cards with rounded corners beyond `border-radius-medium`.** Excessive rounding violates the rectangle constraint.
+- **Cards with image backgrounds.** Image backgrounds obscure the inner surface layer and violate the material principle.
+
+## Modal Specification
+
+The modal is a spatial interruption. It creates a new layer of space that overlays the existing content, demanding the user's attention.
+
+### HTML
 
 ```html
 <div class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -260,7 +393,7 @@ Component templates provide a starting point for new components, ensuring consis
 </div>
 ```
 
-### Modal CSS
+### CSS
 
 ```css
 .modal-backdrop {
@@ -327,6 +460,24 @@ Component templates provide a starting point for new components, ensuring consis
 }
 ```
 
+### Why the Backdrop Exists
+
+The backdrop is not decorative. It is the spatial boundary between the modal and the underlying content. Without the backdrop, the modal has no spatial separation from the page — it floats without context. The backdrop's opacity (50% black) ensures the underlying content is visible but not interactive, establishing the modal as the primary spatial layer.
+
+### Why `transform: scale(0.95)` Is Used
+
+The scale transform communicates the modal's entry into space. It starts slightly smaller and grows to full size, suggesting it is moving from a distance toward the user. This is spatial communication, not decoration.
+
+### Why `aria-modal="true"` Is Mandatory
+
+The `aria-modal="true"` attribute tells assistive technologies that the modal is a separate spatial layer. Without this attribute, screen readers may allow interaction with the underlying content, breaking the spatial isolation that the modal creates.
+
+### Anti-Patterns
+
+- **Modals without backdrop.** Modals without backdrop have no spatial separation from the page. They float without context.
+- **Full-screen modals.** Full-screen modals eliminate the spatial relationship between the modal and the page. They are page replacements, not modals.
+- **Modals with animations beyond the defined transitions.** Additional animations are decorative and violate the physics principle.
+
 ## Accessibility Checklist
 
 - [ ] Semantic HTML elements used
@@ -337,10 +488,14 @@ Component templates provide a starting point for new components, ensuring consis
 - [ ] Color contrast sufficient
 - [ ] Responsive design works
 
+### Why Every Item Is Mandatory
+
+Every checklist item is mandatory because WHITE DIAMOND defines universal principles. An inaccessible component excludes users from the space, violating the architectural vision. Accessibility is not a feature — it is a fundamental requirement.
+
 ## See Also
 
-- [Page Template](page-template.md) — Page template
-- [Component Philosophy](../components/component-philosophy.md) — Why components exist
-- [Accessibility Guidelines](../accessibility/accessibility-guidelines.md) — Universal access
-- [Design Tokens](../tokens/design-tokens.md) — Atomic values
-- [Button Specification](../components/button-specification.md) — Button behavior
+- [Page Template](page-template.md) — How components fit within page structure
+- [Component Philosophy](../components/component-philosophy.md) — Why components exist as architectural objects
+- [Accessibility Guidelines](../accessibility/accessibility-guidelines.md) — Universal access requirements
+- [Design Tokens](../tokens/design-tokens.md) — Atomic values that define component properties
+- [Button Specification](../components/button-specification.md) — Complete button behavior specification
