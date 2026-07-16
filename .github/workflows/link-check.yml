@@ -2,7 +2,7 @@ name: Link Check
 
 on:
   push:
-    branches: [main, prism-structure]
+    branches: [main]
   pull_request:
     branches: [main]
   schedule:

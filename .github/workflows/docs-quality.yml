@@ -2,7 +2,7 @@ name: Documentation Quality
 
 on:
   push:
-    branches: [main, prism-structure]
+    branches: [main]
   pull_request:
     branches: [main]
 
