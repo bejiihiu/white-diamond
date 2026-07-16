@@ -1,0 +1,14 @@
+# WHITE DIAMOND Code Owners
+# Each line is a file pattern followed by one or more owners.
+
+# Default owners for everything
+* @white-diamond/maintainers
+
+# Documentation structure
+/docs/ @white-diamond/docs-team
+
+# GitHub infrastructure
+/.github/ @white-diamond/maintainers
+
+# Security-related files
+SECURITY.md @white-diamond/maintainers
