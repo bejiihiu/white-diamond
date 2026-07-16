@@ -1,0 +1,28 @@
+{
+  "animation": {
+    "duration": {
+      "instant": { "value": "0ms", "type": "duration" },
+      "fast": { "value": "100ms", "type": "duration" },
+      "normal": { "value": "200ms", "type": "duration" },
+      "slow": { "value": "300ms", "type": "duration" },
+      "slower": { "value": "500ms", "type": "duration" }
+    },
+    "easing": {
+      "linear": { "value": "linear", "type": "cubicBezier" },
+      "easeIn": { "value": "cubic-bezier(0.4, 0, 1, 1)", "type": "cubicBezier" },
+      "easeOut": { "value": "cubic-bezier(0, 0, 0.2, 1)", "type": "cubicBezier" },
+      "easeInOut": { "value": "cubic-bezier(0.4, 0, 0.2, 1)", "type": "cubicBezier" },
+      "spring": { "value": "cubic-bezier(0.34, 1.56, 0.64, 1)", "type": "cubicBezier" }
+    },
+    "property": {
+      "transform": { "value": "transform", "type": "transitionProperty" },
+      "opacity": { "value": "opacity", "type": "transitionProperty" },
+      "all": { "value": "all", "type": "transitionProperty" }
+    },
+    "transition": {
+      "fast": { "value": "all 100ms cubic-bezier(0, 0, 0.2, 1)", "type": "transition" },
+      "normal": { "value": "all 200ms cubic-bezier(0, 0, 0.2, 1)", "type": "transition" },
+      "slow": { "value": "all 300ms cubic-bezier(0, 0, 0.2, 1)", "type": "transition" }
+    }
+  }
+}

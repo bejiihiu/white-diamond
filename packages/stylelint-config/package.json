@@ -1,0 +1,11 @@
+{
+  "name": "@white-diamond/stylelint-config",
+  "version": "0.1.0",
+  "description": "Stylelint config for WHITE DIAMOND specification",
+  "main": "index.js",
+  "peerDependencies": {
+    "stylelint": "^15.0.0"
+  },
+  "keywords": ["stylelint", "white-diamond", "design-system"],
+  "license": "MIT"
+}

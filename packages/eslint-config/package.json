@@ -1,0 +1,11 @@
+{
+  "name": "@white-diamond/eslint-config",
+  "version": "0.1.0",
+  "description": "ESLint config for WHITE DIAMOND specification",
+  "main": "index.js",
+  "peerDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "keywords": ["eslint", "white-diamond", "design-system"],
+  "license": "MIT"
+}

@@ -1,0 +1,28 @@
+{
+  "theme": {
+    "light": {
+      "color": {
+        "background": {
+          "primary": { "value": "#FFFFFF", "type": "color" },
+          "secondary": { "value": "#FAFAFA", "type": "color" },
+          "tertiary": { "value": "#F5F5F5", "type": "color" }
+        },
+        "text": {
+          "primary": { "value": "#0A0A0A", "type": "color" },
+          "secondary": { "value": "#525252", "type": "color" },
+          "tertiary": { "value": "#737373", "type": "color" }
+        },
+        "border": {
+          "primary": { "value": "#E5E5E5", "type": "color" },
+          "secondary": { "value": "#D4D4D4", "type": "color" },
+          "focus": { "value": "#6172F3", "type": "color" }
+        },
+        "interactive": {
+          "primary": { "value": "#6172F3", "type": "color" },
+          "hover": { "value": "#4453E6", "type": "color" },
+          "active": { "value": "#3541D0", "type": "color" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "@white-diamond/figma-tokens",
+  "version": "0.1.0",
+  "description": "Figma Tokens for WHITE DIAMOND specification",
+  "keywords": ["figma", "tokens", "white-diamond"],
+  "license": "MIT"
+}

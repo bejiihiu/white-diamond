@@ -1,0 +1,15 @@
+{
+  "name": "@white-diamond/tokens",
+  "version": "0.1.0",
+  "description": "Design tokens for WHITE DIAMOND specification",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "tokens.json", "tokens.css"],
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --watch"
+  },
+  "keywords": ["design-tokens", "white-diamond", "design-system"],
+  "license": "MIT"
+}

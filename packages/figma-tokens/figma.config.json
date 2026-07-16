@@ -1,0 +1,19 @@
+{
+  "name": "WHITE DIAMOND Tokens",
+  "tokens": {
+    "colors": "./tokens/colors.json",
+    "spacing": "./tokens/spacing.json",
+    "borders": "./tokens/borders.json",
+    "typography": "./tokens/typography.json",
+    "shadows": "./tokens/shadows.json",
+    "animation": "./tokens/animation.json"
+  },
+  "themes": {
+    "light": "./theme/light.json",
+    "dark": "./theme/dark.json"
+  },
+  "output": {
+    "format": "json",
+    "destination": "./dist"
+  }
+}

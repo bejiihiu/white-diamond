@@ -1,0 +1,106 @@
+// @white-diamond/tokens v0.1.0
+// ES Module
+const tokens = {
+  "colors": {
+    "neutral": {
+      "0": "#FFFFFF",
+      "50": "#FAFAFA",
+      "100": "#F5F5F5",
+      "200": "#E5E5E5",
+      "300": "#D4D4D4",
+      "400": "#A3A3A3",
+      "500": "#737373",
+      "600": "#525252",
+      "700": "#404040",
+      "800": "#262626",
+      "900": "#171717",
+      "950": "#0A0A0A"
+    },
+    "functional": {
+      "success": "#16A34A",
+      "warning": "#D97706",
+      "error": "#DC2626",
+      "info": "#2563EB"
+    }
+  },
+  "spacing": {
+    "0": "0px",
+    "1": "4px",
+    "2": "8px",
+    "3": "12px",
+    "4": "16px",
+    "5": "20px",
+    "6": "24px",
+    "8": "32px",
+    "10": "40px",
+    "12": "48px",
+    "16": "64px"
+  },
+  "borders": {
+    "width": {
+      "thin": "1px",
+      "standard": "2px",
+      "thick": "3px"
+    },
+    "colors": {
+      "subtle": "#E5E5E5",
+      "standard": "#D4D4D4",
+      "strong": "#A3A3A3"
+    },
+    "radius": {
+      "none": "0px"
+    }
+  },
+  "typography": {
+    "fontSize": {
+      "xs": "12px",
+      "sm": "14px",
+      "base": "16px",
+      "lg": "20px",
+      "xl": "24px",
+      "2xl": "30px",
+      "3xl": "36px",
+      "4xl": "48px"
+    },
+    "fontWeight": {
+      "normal": "400",
+      "medium": "500",
+      "semibold": "600",
+      "bold": "700"
+    },
+    "lineHeight": {
+      "tight": "1.2",
+      "standard": "1.5",
+      "relaxed": "1.6"
+    },
+    "fontFamily": {
+      "sans": "Inter, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, sans-serif",
+      "mono": "\"SF Mono\", Monaco, \"Cascadia Code\", monospace"
+    }
+  },
+  "shadows": {
+    "none": "none",
+    "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+    "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+    "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+    "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1)"
+  },
+  "animation": {
+    "duration": {
+      "instant": "0ms",
+      "fast": "100ms",
+      "standard": "200ms",
+      "slow": "300ms",
+      "verySlow": "500ms"
+    },
+    "easing": {
+      "linear": "linear",
+      "ease": "ease",
+      "easeIn": "cubic-bezier(0.4, 0, 1, 1)",
+      "easeOut": "cubic-bezier(0, 0, 0.2, 1)",
+      "easeInOut": "cubic-bezier(0.4, 0, 0.2, 1)"
+    }
+  }
+};
+export default tokens;
+export const { colors, spacing, borders, typography, shadows, animation } = tokens;

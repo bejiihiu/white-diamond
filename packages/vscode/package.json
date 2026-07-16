@@ -1,0 +1,36 @@
+{
+  "name": "white-diamond-vscode",
+  "displayName": "WHITE DIAMOND Specification",
+  "description": "VS Code extension for WHITE DIAMOND design specification",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Linters",
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:css",
+    "onLanguage:scss",
+    "onLanguage:less"
+  ],
+  "main": "./src/extension.ts",
+  "contributes": {
+    "commands": [
+      {
+        "command": "white-diamond.validateCurrentFile",
+        "title": "WHITE DIAMOND: Validate Current File"
+      },
+      {
+        "command": "white-diamond.showViolations",
+        "title": "WHITE DIAMOND: Show Violations"
+      }
+    ],
+    "diagnosticCollectionName": "white-diamond"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
+  }
+}
